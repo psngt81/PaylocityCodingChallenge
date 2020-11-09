@@ -1,0 +1,240 @@
+{
+  "id": "250a8c88-1b20-4363-8272-374214521691",
+  "version": "2.0",
+  "name": "Basic Dashboard Tests",
+  "url": "https://wmxrwq14uc.execute-api.us-east-1.amazonaws.com",
+  "tests": [{
+    "id": "039e4ea1-4688-4699-9285-c96297ccc8d4",
+    "name": "Add Employee",
+    "commands": [{
+      "id": "c1f83bbb-81ea-4dc1-a145-d3ab3d6bd6a2",
+      "comment": "",
+      "command": "open",
+      "target": "/Prod/Benefits",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "76174960-fe09-49a7-9d25-59908e856939",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1056",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "351ab865-e4cc-4647-be08-18b70bb566c0",
+      "comment": "",
+      "command": "click",
+      "target": "id=add",
+      "targets": [
+        ["id=add", "id"],
+        ["css=#add", "css:finder"],
+        ["xpath=//button[@id='add']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Add Employee')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "81db8faf-6939-44c2-8c97-8e12f4e6f7e0",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "id=add",
+      "targets": [
+        ["id=add", "id"],
+        ["css=#add", "css:finder"],
+        ["xpath=//button[@id='add']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Add Employee')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e1fb14ee-9560-4203-9ea6-615db84982aa",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "id=add",
+      "targets": [
+        ["id=add", "id"],
+        ["css=#add", "css:finder"],
+        ["xpath=//button[@id='add']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Add Employee')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8b3877c0-87ff-4ba3-b715-dfe5a0992554",
+      "comment": "",
+      "command": "type",
+      "target": "id=firstName",
+      "targets": [
+        ["id=firstName", "id"],
+        ["name=firstName", "name"],
+        ["css=#firstName", "css:finder"],
+        ["xpath=//input[@id='firstName']", "xpath:attributes"],
+        ["xpath=//div[@id='employeeModal']/div/div/div[2]/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "Joeseph"
+    }, {
+      "id": "8c3da68d-891d-494e-b61d-c1e3e179a5a0",
+      "comment": "",
+      "command": "type",
+      "target": "id=lastName",
+      "targets": [
+        ["id=lastName", "id"],
+        ["name=lastName", "name"],
+        ["css=#lastName", "css:finder"],
+        ["xpath=//input[@id='lastName']", "xpath:attributes"],
+        ["xpath=//div[@id='employeeModal']/div/div/div[2]/form/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "Carlton"
+    }, {
+      "id": "14ace9ea-6c48-468a-acc7-62d39897ac84",
+      "comment": "",
+      "command": "type",
+      "target": "id=dependants",
+      "targets": [
+        ["id=dependants", "id"],
+        ["name=dependants", "name"],
+        ["css=#dependants", "css:finder"],
+        ["xpath=//input[@id='dependants']", "xpath:attributes"],
+        ["xpath=//div[@id='employeeModal']/div/div/div[2]/form/div[3]/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/input", "xpath:position"]
+      ],
+      "value": "5"
+    }, {
+      "id": "1b7b380a-e726-4a56-8f78-d7a6ea499df2",
+      "comment": "",
+      "command": "click",
+      "target": "id=addEmployee",
+      "targets": [
+        ["id=addEmployee", "id"],
+        ["css=#addEmployee", "css:finder"],
+        ["xpath=//button[@id='addEmployee']", "xpath:attributes"],
+        ["xpath=//div[@id='employeeModal']/div/div/div[3]/button", "xpath:idRelative"],
+        ["xpath=//div[3]/button", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "4d31bc99-9e17-4e0b-82bc-b3e1570b11b8",
+    "name": "Delete Employee",
+    "commands": [{
+      "id": "d474e685-07ff-45d2-bf5f-179bdca4e4f8",
+      "comment": "",
+      "command": "open",
+      "target": "/Prod/Benefits",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ad47a631-0506-4ba8-8ec3-5534e1bc710b",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1056",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ac5ea351-64a8-412d-a852-6480df66d049",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(5) .fa-times",
+      "targets": [
+        ["css=tr:nth-child(5) .fa-times", "css:finder"],
+        ["xpath=//table[@id='employeesTable']/tbody/tr[5]/td[9]/i[2]", "xpath:idRelative"],
+        ["xpath=//tr[5]/td[9]/i[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a5536055-136c-4886-8e94-35b7868eb333",
+      "comment": "",
+      "command": "click",
+      "target": "id=deleteEmployee",
+      "targets": [
+        ["id=deleteEmployee", "id"],
+        ["css=#deleteEmployee", "css:finder"],
+        ["xpath=//button[@id='deleteEmployee']", "xpath:attributes"],
+        ["xpath=//div[@id='deleteModal']/div/div/div[3]/button", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Delete')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "eca30065-6e3f-41df-a2f1-27c806cff868",
+    "name": "Edit Employee",
+    "commands": [{
+      "id": "9e43a129-f622-4ebe-9699-131f4c1e6710",
+      "comment": "",
+      "command": "open",
+      "target": "/Prod/Benefits",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5c7ab3ad-919d-402d-a0cf-3e7faecc5fac",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1056",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "78153ea7-5cd2-47bf-8c23-6263f626b6ed",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(3) .fa-edit",
+      "targets": [
+        ["css=tr:nth-child(3) .fa-edit", "css:finder"],
+        ["xpath=//table[@id='employeesTable']/tbody/tr[3]/td[9]/i", "xpath:idRelative"],
+        ["xpath=//tr[3]/td[9]/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b7596afc-7ecd-41c8-a9ad-2d44717c5938",
+      "comment": "",
+      "command": "click",
+      "target": "css=.form-group:nth-child(4)",
+      "targets": [
+        ["css=.form-group:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='employeeModal']/div/div/div[2]/form/div[3]", "xpath:idRelative"],
+        ["xpath=//div[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "881fa14e-94c2-40e1-895c-815f6e8d977e",
+      "comment": "",
+      "command": "type",
+      "target": "id=dependants",
+      "targets": [
+        ["id=dependants", "id"],
+        ["name=dependants", "name"],
+        ["css=#dependants", "css:finder"],
+        ["xpath=//input[@id='dependants']", "xpath:attributes"],
+        ["xpath=//div[@id='employeeModal']/div/div/div[2]/form/div[3]/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/input", "xpath:position"]
+      ],
+      "value": "4"
+    }, {
+      "id": "70b22ca8-2e2d-4d25-90d9-51a72b3e5c15",
+      "comment": "",
+      "command": "click",
+      "target": "id=updateEmployee",
+      "targets": [
+        ["id=updateEmployee", "id"],
+        ["css=#updateEmployee", "css:finder"],
+        ["xpath=//button[@id='updateEmployee']", "xpath:attributes"],
+        ["xpath=//div[@id='employeeModal']/div/div/div[3]/button[2]", "xpath:idRelative"],
+        ["xpath=//button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Update')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "15898021-a881-47f4-bc6c-fa66a997cffb",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["039e4ea1-4688-4699-9285-c96297ccc8d4"]
+  }],
+  "urls": ["https://wmxrwq14uc.execute-api.us-east-1.amazonaws.com/"],
+  "plugins": []
+}
